@@ -40,9 +40,6 @@
             background-color: #ffffff;
             color: #000000;
         }
-        .border-thin {
-            border: 1px solid #262626;
-        }
     </style>
 </head>
 <body class="bg-black text-white antialiased min-h-screen flex flex-col justify-between selection:bg-white selection:text-black">
@@ -56,7 +53,7 @@
             
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-mono-muted">
                 <a href="#about" class="hover:text-white transition-colors">About</a>
-                <a href="#builds" class="hover:text-white transition-colors">Builds</a>
+                <a href="#build" class="hover:text-white transition-colors">Supported Build</a>
                 <a href="#store" class="hover:text-white transition-colors">VIP / Store</a>
                 <a href="#status" class="hover:text-white transition-colors">Status</a>
             </nav>
@@ -69,12 +66,11 @@
 
     <main class="max-w-5xl mx-auto px-6 py-16 flex-1 space-y-24">
         
-        <!-- Hero / Intro -->
         <section id="about" class="space-y-6 pt-8 border-b border-mono-border pb-16">
             <div class="inline-flex items-center space-x-2 border border-mono-border px-3 py-1 text-xs font-mono text-mono-muted rounded-full">
                 <span>Developer: LilWill</span>
                 <span>•</span>
-                <span>OGFN Multiplayer Engine</span>
+                <span>OGFN Engine</span>
             </div>
             
             <h1 class="text-4xl sm:text-6xl font-black tracking-tight uppercase max-w-3xl leading-none">
@@ -82,59 +78,52 @@
             </h1>
             
             <p class="text-mono-muted text-lg max-w-2xl font-light leading-relaxed">
-                Project Aura is a minimal, focused OGFN private server project developed by LilWill. Experience classic Fortnite builds with custom matchmaking and high reliability.
+                Project Aura is a minimal OGFN private server project developed by LilWill. Powered exclusively on build v8.51 for maximum stability and smooth matchmaking.
             </p>
 
             <div class="flex flex-wrap gap-4 pt-4">
                 <a href="#store" class="bg-white text-black hover:bg-mono-light font-medium px-6 py-3 rounded-lg text-sm transition-all duration-200">
                     Get VIP Access
                 </a>
-                <a href="#builds" class="border border-mono-border hover:bg-mono-hover text-white font-medium px-6 py-3 rounded-lg text-sm transition-all duration-200">
-                    View Supported Builds
+                <a href="#build" class="border border-mono-border hover:bg-mono-hover text-white font-medium px-6 py-3 rounded-lg text-sm transition-all duration-200">
+                    View Supported Build
                 </a>
             </div>
         </section>
 
-        <section id="builds" class="space-y-8">
+        <section id="build" class="space-y-8">
             <div class="space-y-2">
-                <h2 class="text-2xl font-bold font-mono tracking-wide uppercase">Supported Builds</h2>
-                <p class="text-mono-muted text-sm">Active client builds hosted on the projectaura.me network.</p>
+                <h2 class="text-2xl font-bold font-mono tracking-wide uppercase">Supported Build</h2>
+                <p class="text-mono-muted text-sm">The exclusive client build hosted on the projectaura.me network.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="border border-mono-border p-6 rounded-xl space-y-4 bg-mono-card hover:border-white/40 transition-colors">
-                    <div class="flex justify-between items-start font-mono">
-                        <span class="text-xl font-bold">v3.60</span>
-                        <span class="text-xs border border-mono-border px-2 py-0.5 rounded text-mono-muted">Season 3</span>
+            <!-- Single Build Display Card -->
+            <div class="border border-mono-border p-8 rounded-2xl bg-mono-card hover:border-white/40 transition-colors space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 font-mono">
+                    <div>
+                        <div class="text-3xl font-black tracking-tight">v8.51 <span class="text-xs text-mono-muted font-normal ml-2">(Season 8)</span></div>
+                        <p class="text-xs text-mono-muted mt-1">Primary Dedicated OGFN Server Target</p>
                     </div>
-                    <p class="text-xs text-mono-muted leading-relaxed">Classic double pump mechanics, original map layout, and full lobby matchmaking.</p>
-                    <div class="pt-2 text-xs font-mono text-white flex items-center space-x-2">
+                    <div class="inline-flex items-center space-x-2 border border-mono-border px-3 py-1.5 rounded-full text-xs text-white bg-black">
                         <span class="w-2 h-2 bg-white rounded-full"></span>
                         <span>Operational</span>
                     </div>
                 </div>
 
-                <div class="border border-mono-border p-6 rounded-xl space-y-4 bg-mono-card hover:border-white/40 transition-colors">
-                    <div class="flex justify-between items-start font-mono">
-                        <span class="text-xl font-bold">v8.51</span>
-                        <span class="text-xs border border-mono-border px-2 py-0.5 rounded text-mono-muted">Season 8</span>
-                    </div>
-                    <p class="text-xs text-mono-muted leading-relaxed">Stable endgame siphon settings, custom cosmetics inventory, and low latency server nodes.</p>
-                    <div class="pt-2 text-xs font-mono text-white flex items-center space-x-2">
-                        <span class="w-2 h-2 bg-white rounded-full"></span>
-                        <span>Operational</span>
-                    </div>
-                </div>
+                <hr class="border-mono-border">
 
-                <div class="border border-mono-border p-6 rounded-xl space-y-4 bg-mono-card hover:border-white/40 transition-colors">
-                    <div class="flex justify-between items-start font-mono">
-                        <span class="text-xl font-bold">v11.31</span>
-                        <span class="text-xs border border-mono-border px-2 py-0.5 rounded text-mono-muted">Chapter 2</span>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-mono-muted">
+                    <div class="space-y-2">
+                        <div class="font-bold text-white uppercase font-mono">Mechanics</div>
+                        <p class="leading-relaxed">Endgame siphon settings, classic weapon balance, and authentic Season 8 physics engine.</p>
                     </div>
-                    <p class="text-xs text-mono-muted leading-relaxed">Winterfest update build with custom matchmaking queue and private matches support.</p>
-                    <div class="pt-2 text-xs font-mono text-white flex items-center space-x-2">
-                        <span class="w-2 h-2 bg-white rounded-full"></span>
-                        <span>Operational</span>
+                    <div class="space-y-2">
+                        <div class="font-bold text-white uppercase font-mono">Cosmetics</div>
+                        <p class="leading-relaxed">Full custom locker support with legacy skin unlocking via projectaura.me profile.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="font-bold text-white uppercase font-mono">Matchmaking</div>
+                        <p class="leading-relaxed">Low latency dedicated server nodes with instant queueing and lobby support.</p>
                     </div>
                 </div>
             </div>
@@ -154,7 +143,7 @@
                             <h3 class="text-xl font-bold font-mono uppercase">VIP Access</h3>
                             <span class="text-2xl font-bold font-mono">$4.99 <span class="text-xs text-mono-muted font-normal">/ mo</span></span>
                         </div>
-                        <p class="text-xs text-mono-muted">Enhance your OGFN experience with queue priorities and custom perks.</p>
+                        <p class="text-xs text-mono-muted">Enhance your OGFN experience with priority queuing and custom perks.</p>
                         
                         <hr class="border-mono-border">
 
@@ -169,7 +158,7 @@
                             </li>
                             <li class="flex items-center space-x-2">
                                 <i class="fa-solid fa-minus text-white"></i>
-                                <span>Early Access to Experimental Builds</span>
+                                <span>Early Access to Experimental Updates</span>
                             </li>
                         </ul>
                     </div>
@@ -215,7 +204,6 @@
             </div>
         </section>
 
-        <!-- Live Functional Server Status Section -->
         <section id="status" class="border border-mono-border p-6 rounded-xl bg-mono-card space-y-4 font-mono text-xs">
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <div class="flex items-center space-x-3">
